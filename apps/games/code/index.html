@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="stylesheet" href="crypto.css">
+</head>
+
+<body>
+  <header>
+    <h1> Xm Crypto Code </h1>
+  </header>
+
+
+  <!-- crypto-area-1 -->
+  <section class="card">
+    <textarea id='area1' placeholder='Use buttons below!' readonly></textarea>
+
+    <div class="ctrl-div">
+      <button class='ctrl' id='copy'>Copy</button>
+      <button class='ctrl clear' id='clear'>Clear All</button>
+      <button class='ctrl' id='back'>Backspace</button>
+    </div>
+
+    <section id='keyboard'></section>
+  </section>
+
+
+  <!-- plain-area -->
+  <section class="card">
+    <textarea id='area2' placeholder='Type text here!'></textarea>
+
+    <article id='artCipher'></article>
+  </section>
+
+
+  <!-- crypto-area-2 -->
+  <section class="card">
+    <textarea id='area3' placeholder='Paste code here!'></textarea>
+
+    <button class='ctrl' id='dec-btn'>Decrypt</button>
+
+    <article id='artPlain'></article>
+  </section>
+
+
+  <!-- Challenges -->
+  <section class="card">
+    <h2>CHALLENGE</h2>
+
+    <p>
+      Click here to get a challenge!<br>
+      (Post Ur Answer in a Comment started by the challenge <span>index</span>)
+    </p>
+  </section>
+
+
+  <footer>
+    All rights reserved &copy; Sourab Ghosh
+  </footer>
+
+  <script src="crypto.js"></script>
+</body>
+
+</html>
