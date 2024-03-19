@@ -1,0 +1,159 @@
+@font-face {
+  font-family: Marhey;
+  src: url(fonts/Marhey-VariableFont_wght.ttf);
+}
+
+
+* {
+  font-family: Poppins, Marhey, serif;
+  outline: none;
+  color: dimgrey;
+}
+
+body {
+  background: #f6f7f9;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  text-shadow: 5px 5px 10px lightgrey;
+  font-size: 22pt;
+}
+
+.card {
+  margin: 1.5em;
+  padding: 1em;
+  background: #fff;
+  box-shadow: 1px 1px 15px #0112;
+  border-radius: 10px;
+  position: relative;
+}
+
+textarea,
+article {
+  font-size: 11pt;
+}
+
+textarea {
+  width: 95%;
+  min-height: 125px;
+  display: block;
+  border: 2px solid #0001;
+  background-color: transparent;
+  padding: 6px;
+  resize: vertical;
+}
+
+textarea,
+button {
+  border-radius: 6px;
+}
+
+.ctrl-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.ctrl {
+  width: 100%;
+  background: transparent;
+  color: dimgrey;
+  border: 1px solid #0001;
+  font-size: 10pt;
+  padding: 3px;
+}
+
+.ctrl:active {
+  background-color: dimgray;
+  color: white;
+}
+
+.clear {
+  color: #f009;
+}
+
+.clear:active {
+  background: #f009;
+}
+
+#keyboard {}
+
+.chars {
+  display: inline-block;
+  --len: 31px;
+  width: var(--len);
+  height: var(--len);
+  background-color: transparent;
+  font-size: 12pt;
+  border: 1px solid #0001;
+}
+
+.chars.active,
+.chars:active {
+  color: white;
+}
+
+.numbers {
+  color: brown;
+}
+
+.numbers.active,
+.numbers:active {
+  background-color: brown;
+}
+
+.upper {
+  color: purple;
+}
+
+.upper.active,
+.upper:active {
+  background-color: purple;
+}
+
+.lower,
+.special,
+#space {
+  color: saddlebrown;
+}
+
+.lower.active,
+.lower:active,
+.special.active,
+.special:active,
+#space:active {
+  background-color: saddlebrown;
+}
+
+#space {
+  width: calc(var(--len) * 2);
+}
+
+article {
+  color: saddlebrown;
+  word-break: break-all;
+  margin-top: 1em;
+}
+
+.copied {
+  color: limegreen;
+}
+
+p,
+footer {
+  font-size: 11pt;
+}
+
+span {
+  color: rgb(255, 50, 50);
+}
+
+sup {
+  background-color: rgb(255, 50, 50);
+  color: white;
+  border-radius: 15px;
+  padding: 3px 6px;
+  font-weight: bold;
+}
