@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Redressed&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  
+    #container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background-color: #E696FF;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+z-index: -1
+    }
+
+    .card {
+      height: 18vh;
+      width: 24vw;
+      margin: 0.5vh 0.2vw;
+      background-color: greenyellow;
+      border-radius: 3vw;
+z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: greenyellow;
+      transform: rotateY(180deg);
+      transition: transform ease-in-out 1s 0s,
+        color 0.01s 0.5s, background-color 0.01s 0.5s;
+
+    }
+
+    #score {
+      height: 5.5vh;
+      width: 25vw;
+      position: fixed;
+      bottom: 0vh;
+      left: 75vw;
+      border-radius: 2vw;
+      background-color: rgba(79, 78, 167, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 7;
+      font-size: 1vw;
+    }
+    #finish{
+      width:90vw;
+      height: 50vh;
+      z-index:30;
+border-radius: 4vw;
+      background-color:rgba(100%,100%,100%,0.9);
+      position:fixed;
+      top:20vh;
+      left:5vw;
+      border: 1vw solid blanchedalmond;
+      font-size: 3vw;
+      padding:4vw 3vw 3vw 9vw;
+      visibility: hidden;
+      display:flex;
+      justify-content: center;
+      align-items:center;
+      box-sizing: border-box;
+      font-weight: bolder
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
+  <div id="score"></div>
+  <div id="finish"></div>
+
+
+
+</body>
+<script src="main.js"></script>
+
+</html>
