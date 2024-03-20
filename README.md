@@ -25,20 +25,17 @@ Please visit us and make sure to follow us in these sites for updates.
 
 And yes it will have google as default engine due to the rule of authentication if any one wants to know how to set hind .com as default mail at xms7210@gmail.com or at xms7210@protonmail.ch
 
-![image](https://github.com/Lemon-India/Hind/assets/110107438/d427a4ed-3ef7-47cf-850f-775f84497895)
-![image](https://github.com/Lemon-India/Hind/assets/110107438/9bbe17a7-9ade-4d35-bd31-c801b1970e26)
-![image](https://github.com/Lemon-India/Hind/assets/110107438/824ce8a9-dd2b-47e2-9653-6dd3875bd23f)
-![image](https://github.com/Lemon-India/Hind/assets/110107438/fb5e6ef4-1018-4fd1-87f7-45f278e1a0d5)
 
 
 Trackers In Hind.com compares to Google...
+
 ![image](https://github.com/Lemon-India/Hind/assets/110107438/b6c0d910-38a4-4ce8-9157-cd74d4993230)
 
 
 Searches per second
 Thank you—
 
-![image](https://github.com/Lemon-India/Hind/assets/110107438/1c55de54-c9b9-44b5-9aa3-ea206e2ba601)
+
 
 Sourab Ghosh (CC-I) founder of Lemon India.llc
 Jai hind….
