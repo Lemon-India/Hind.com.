@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webWidget>
+	<widgetName>Hind com_17960572</widgetName>
+	<registeredUrl>
+		<link>http://stat.appioapp.com/statistics.php</link>
+	</registeredUrl>  
+		<id>17960572</id>
+	<usage>
+		<link>http://stat.appioapp.com/statistics.php</link>
+	</usage>
+	<preventFromSleep>false</preventFromSleep>
+	<locationUrl>
+		<link>icc.to/desktopify/android/location.php</link>  
+	</locationUrl>
+	<contentProtection></contentProtection>
+	<acceptCookie>true</acceptCookie>
+	<userInterface>standard</userInterface>
+	<bannerPosition>bottom</bannerPosition>
+	<rateItemVisibility>FALSE</rateItemVisibility>
+	<showRefreshMenuItem>TRUE</showRefreshMenuItem>
+	<showShareMenuItem>true</showShareMenuItem>
+	<showAboutMenuItem>true</showAboutMenuItem>
+	<showExitMenuItem>true</showExitMenuItem>
+	<showSearchNotice>false</showSearchNotice>
+	<enableUrlBar>false</enableUrlBar>
+        <showDownloadList>false</showDownloadList>
+
+	<tabsPosition>top</tabsPosition>
+	<enableFullScreenBanner>true</enableFullScreenBanner>
+	<enableOnExitFullScreenBanner>true</enableOnExitFullScreenBanner>
+	<enableRedirection>true</enableRedirection>
+	<enableHideUrlBar>true</enableHideUrlBar>
+	<enableHideTabBar>true</enableHideTabBar>
+	<downloadAction>dialog</downloadAction>
+	<affiliate></affiliate>
+	<publisher></publisher>
+	<enableAboutScreen>true</enableAboutScreen>
+	<shareExtraLink></shareExtraLink>
+	<showSettings>true</showSettings>
+	<theme>ACTION_BAR</theme>
+	<urlBarStyle>top</urlBarStyle>
+	<showStartupConfirmationDialog></showStartupConfirmationDialog>
+	<splashScreen  image="" background="#000000"/>
+	<urlBarMenuItems>
+	  
+			<button name="forward"/>
+			<button name="request_desktop"/>
+			<button name="add_to_home"/>
+			<button name="home">home</button>
+			
+	</urlBarMenuItems>
+	<fullScreenMode>
+		<content>
+						<id>tab0</id>
+						<name>Hind com</name>
+						<link>https://xmshind.vercel.app</link>
+						<update>0</update>
+						<width>319</width>
+						<height>458</height>
+						<tabName>Hind com</tabName>
+						<tabIcon></tabIcon>
+						<showAsTab>true</showAsTab>
+						<tabId>21480393</tabId>
+						<tabType>web</tabType>
+						
+						<loadingCurtain>none</loadingCurtain>
+						
+					 </content>
+				 
+	</fullScreenMode> 
+	
+</webWidget>
