@@ -27,8 +27,6 @@ And yes it will have google as default engine due to the rule of authentication 
 
 
 
-Trackers In Hind.com compares to Google...
-
 ![image](https://github.com/Lemon-India/Hind/assets/110107438/b6c0d910-38a4-4ce8-9157-cd74d4993230)
 
 
