@@ -1,0 +1,118 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="container">
+    <div class="col-lg-8">
+        <div class="panel profile-cover">
+            <div class="profile-cover__img">
+                <img src="https://militaryhealthinstitute.org/wp-content/uploads/sites/37/2019/10/blank-person-icon-9.jpg" alt="icon of user" />
+                <h3 class="h3">{{profile_user.username}}</h3>
+            </div>
+          
+            <div class="profile-cover__action bg--img" data-overlay="0.3">
+                {% if not other_profile %}
+                    <button id="follow-user" data-profileuser="{{profile_user.id}}" class="btn btn-rounded btn-info">
+                        <i class="fa fa-plus"></i>
+                        <span id="span-follow">{{message}}</span>
+                    </button>
+                </form>
+                {% endif %}
+            </div>
+           
+            <div class="profile-cover__info">
+                <ul class="nav">
+                    <li><strong>{{count}}</strong>Posts</li>
+                    <li><strong><span id="num_followers">{{profile_user.num_followers}}</span></strong>Followers</li>
+                    <li><strong>{{profile_user.num_following}}</strong>Following</li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">All posts</h3>
+            </div>
+            <div class="panel-content panel-activity">
+                {% for post in page_obj.object_list %}
+                <ul class="panel-activity__list">
+                    <li>
+                        <i class="activity__list__icon fa fa-question-circle-o"></i>
+                        <div class="activity__list__header">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" />
+                            <a href="{% url 'profile' post.username %}">{{post.username}}</a>
+        
+                        </div>
+                        <div class="activity__list__body entry-content">
+                            <p id="post-content-{{post.id}}">
+                                {{post.content}}
+                            </p>
+                            <textarea data-id="{{post.id}}" id="edited-post-{{post.id}}" style="display:none;" class="form-control textarea" row="1">{{post.content}}</textarea>
+                        </div>
+                        <div class="activity__list__footer">
+                            {% if request.user in post.likes.all %}
+                            <a href="#" id="ahref-like-{{post.id}}" title="You have liked this post" class="like" data-likeid="{{post.id}}"> <i id="icon-{{post.id}}" style="color:red;" class="fa fa-heart"></i><span id="like-{{post.id}}">{{post.num_likes}}</span></a>
+                            {% else %}
+                            <a href="#" id="ahref-like-{{post.id}}" title="You have not liked this post" class="like" data-likeid="{{post.id}}"> <i id="icon-{{post.id}}" style="color: rgb(153,153,153);" class="fa fa-heart"></i><span id="like-{{post.id}}">{{post.num_likes}}</span></a>
+                            {% endif %}
+                            <a href="#"> <i class="fa fa-comments"></i>23</a>
+                    
+                            {% if post.username == request.user %}
+                            <a href="#"><button class="edit" id="edit-post-{{post.id}}" data-editid="{{post.id}}">Edit</button></a>
+                            <a href="#"><button id="save-{{post.id}}" style="display:none">Save</button></a>
+                            {% endif %}
+                            <span> <i class="fa fa-clock"></i>{{post.post_date}}</span>
+                        </div>
+                    </li>
+                </ul>
+                {% endfor %}
+            </div>
+             <!--Pagination-->
+             <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                {% if page_obj.has_previous %}
+                    <li class="page-item">
+                    <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+                    </li>
+                {% else %}
+                    <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="True">Previous</a>
+                    </li>
+                {% endif %}
+
+                {% if page_obj.number|add:'-4' > 1 %}
+                    <li class="page-item"><a class="page-link" href="?page={{ page_obj.number|add:'-5' }}">&hellip;</a></li>
+                {% endif %}
+
+
+                {% for i in page_obj.paginator.page_range %}
+                    {% if page_obj.number == i %}
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link">
+                        {{ i }}
+                        <span class="sr-only">(current)</span>
+                        </span>
+                    </li>
+                    {% elif i > page_obj.number|add:'-5' and i < page_obj.number|add:'5' %}
+                        <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+                    {% endif %}
+                {% endfor %}
+
+                {% if page_obj.paginator.num_pages > page_obj.number|add:'4' %}
+                <li class="page-item"><a class="page-link" href="?page={{ page_obj.number|add:'5' }}">&hellip;</a></li>
+                {% endif %}
+
+                {% if page_obj.has_next %}
+                    <li class="page-item">
+                    <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a>
+                    </li>
+                {% else %}
+                    <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="True">Next</a>
+                    </li>
+                {% endif %}
+                </ul>
+            </nav>
+            <!--end of Pagination-->
+
+{% endblock %}
