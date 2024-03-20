@@ -12,9 +12,8 @@ Hind.com the search engine of india the pride of india to visit the site please 
 Due to green weblling method a new server method your data is secured tight .The search engine is not asking any private details like account etc. It is totally private. It is totally encrypted and no one can view it what have u searched.
 
 
-So today only shift to hind.com for supporting made in india. The links are present below:-
+So today only shift to hind.com for supporting made in india. 
 
-Link
 Hi i am Sourab i m a web and app developer and also a search engine optimizer , Penetration tester , Cybersecurity expert and a White hat Ethical Hacker and my age is ony 17 years . For search engine optimization mail: xms7210@gmail.com,xms7210@protonmail.ch but no calls will be permitted. For more whatsapp no :
 
 +91 7602591642
@@ -22,13 +21,6 @@ Hi i am Sourab i m a web and app developer and also a search engine optimizer , 
 Please visit us and make sure to follow us in these sites for updates.
 
 And yes it will have google as default engine due to the rule of authentication if any one wants to know how to set hind .com as default mail at xms7210@gmail.com or at xms7210@protonmail.ch
-
-
-
-images of Hind.com
-And for the hind search engine Android App link:
-
-Download
 
 
 Trackers In Hind.com compares to Google….
