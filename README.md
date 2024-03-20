@@ -40,12 +40,5 @@ Thank you—
 Sourab Ghosh (CC-I) founder of Lemon India.llc
 Jai hind….
 
-Sourab Ghosh (Xms).
 
-xms7210@gmail.com
-+917602591642
-Shivmandir Bazzar
-Atharokhai
-Matigara
-Siliguri, West Bengal 734011
-India
+
