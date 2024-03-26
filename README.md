@@ -23,7 +23,7 @@ Hi i am Sourab i m a web and app developer and also a search engine optimizer , 
 
 Please visit us and make sure to follow us in these sites for updates.
 
-And yes it will have google as default engine due to the rule of authentication if any one wants to know how to set hind .com as default mail at xms7210@gmail.com or at xms7210@protonmail.ch
+And yes it will have google as default engine due to the rule of authentication if any one wants to know how to set hind .com as default mail at cc1.hind@proton.me
 
 
 
