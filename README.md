@@ -17,7 +17,7 @@ Due to green weblling method a new server method your data is secured tight .The
 
 So today only shift to hind.com for supporting made in india. 
 
-Hi i am Sourab i m a web and app developer and also a search engine optimizer , Penetration tester , Cybersecurity expert and a White hat Ethical Hacker and my age is ony 17 years . For search engine optimization mail: xms7210@gmail.com,xms7210@protonmail.ch but no calls will be permitted. For more whatsapp no :
+Hi i am Sourab i m a web and app developer and also a search engine optimizer , Penetration tester , Cybersecurity expert and a White hat Ethical Hacker and my age is ony 17 years . For search engine optimization mail: cc1.hind@proton.me but no calls will be permitted. For more whatsapp no :
 
 +91 7602591642
 
