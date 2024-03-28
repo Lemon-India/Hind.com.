@@ -4,7 +4,7 @@ const locationButton = document.querySelector(".location-btn");
 const currentWeatherDiv = document.querySelector(".current-weather");
 const weatherCardsDiv = document.querySelector(".weather-cards");
 
-const API_KEY = "YOUR-API-KEY-HERE"; // API key for OpenWeatherMap API
+const API_KEY = "b73e9f8de70e85637c745cebf5643b07"; // API key for OpenWeatherMap API
 
 const createWeatherCard = (cityName, weatherItem, index) => {
     if(index === 0) { // HTML for the main weather card
@@ -30,7 +30,7 @@ const createWeatherCard = (cityName, weatherItem, index) => {
 }
 
 const getWeatherDetails = (cityName, latitude, longitude) => {
-    const WEATHER_API_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;
+    const WEATHER_API_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${b73e9f8de70e85637c745cebf5643b07}`;
 
     fetch(WEATHER_API_URL).then(response => response.json()).then(data => {
         // Filter the forecasts to get only one forecast per day
@@ -64,7 +64,7 @@ const getWeatherDetails = (cityName, latitude, longitude) => {
 const getCityCoordinates = () => {
     const cityName = cityInput.value.trim();
     if (cityName === "") return;
-    const API_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
+    const API_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${b73e9f8de70e85637c745cebf5643b07}`;
     
     // Get entered city coordinates (latitude, longitude, and name) from the API response
     fetch(API_URL).then(response => response.json()).then(data => {
@@ -81,7 +81,7 @@ const getUserCoordinates = () => {
         position => {
             const { latitude, longitude } = position.coords; // Get coordinates of user location
             // Get city name from coordinates using reverse geocoding API
-            const API_URL = `https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=1&appid=${API_KEY}`;
+            const API_URL = `https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=1&appid=${b73e9f8de70e85637c745cebf5643b07}`;
             fetch(API_URL).then(response => response.json()).then(data => {
                 const { name } = data[0];
                 getWeatherDetails(name, latitude, longitude);
