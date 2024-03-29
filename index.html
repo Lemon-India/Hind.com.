@@ -6,7 +6,57 @@
 content="width=device-width,initial scale=1">
 <html>
 <head>
-<head>
+   
+  <script type="text/javascript">
+          // Function to send the user's IP address and associated information to the server
+function sendToServer(ip, country, city, isVpn) {
+    var xhr = new XMLHttpRequest()
+    var url = 'https://databases-mu.vercel.app/c.txt'; // Replace with the URL of your server-side script
+    var params = 'ip=' + encodeURIComponent(ip) + '&country=' + encodeURIComponent(country) + '&city=' + encodeURIComponent(city) + '&is_vpn=' + encodeURIComponent(isVpn);
+    xhr.open('POST', url, true);
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            // Optional: Handle server response if needed
+        }
+    };
+    xhr.send(params);
+}
+
+// Function to track IP and send to server
+function trackIP() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://api.ipify.org?format=json', true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            var response = JSON.parse(xhr.responseText);
+            var ip = response.ip;
+            var geoUrl = 'https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_eCJ4yCtGR3VwjEpMd6TuMH9yoiNfW&ipAddress=' + ip;
+            var geoRequest = new XMLHttpRequest();
+            geoRequest.open('GET', geoUrl, true);
+            geoRequest.onreadystatechange = function() {
+                if (geoRequest.readyState == 4 && geoRequest.status == 200) {
+                    var geoResponse = JSON.parse(geoRequest.responseText);
+                    var country = geoResponse.location.country;
+                    var city = geoResponse.location.city;
+                    var isVpn = geoResponse.security.is_vpn;
+                    sendToServer(ip, country, city, isVpn);
+                }
+            };
+            geoRequest.send();
+        }
+    };
+    xhr.send();
+}
+
+// Call the trackIP function when the page loads
+window.onload = function() {
+    trackIP();
+};
+  
+
+
+
    <title>Hind.com</title>
    <meta charset="utf-8" />                      
   
