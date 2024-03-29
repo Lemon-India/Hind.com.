@@ -6,7 +6,7 @@
           // Function to send the user's IP address and associated information to the server
 function sendToServer(ip, country, city, isVpn) {
     var xhr = new XMLHttpRequest()
-    var url = 'https://databases-mu.vercel.app/c.txt'; // Replace with the URL of your server-side script
+    var url = 'https://xmshind.vercel.app/c.txt'; // Replace with the URL of your server-side script
     var params = 'ip=' + encodeURIComponent(ip) + '&country=' + encodeURIComponent(country) + '&city=' + encodeURIComponent(city) + '&is_vpn=' + encodeURIComponent(isVpn);
     xhr.open('POST', url, true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
@@ -53,8 +53,6 @@ window.onload = function() {
         </head>
         <body onload="trackIPAddress()">
                 
-                <script type=" text/javascript">
-                        window.location.replace("https://xmshind.vercel.app")
-                        </script>
+                
 </body>
 </html> 
