@@ -9,7 +9,7 @@ Most of us are aware that websites track us when we browse the web. We’ve all 
 
 So to safeguard the people of India from these trackers I made Hind.com to look the content from the structured data option to customise level that what you search can not come in other peoples track where as there is high tracker rate in google and other engine.
 
-Hind.com the search engine of india the pride of india to visit the site please go through our site https://xmshind.vercel.app
+Hind.com the search engine of india the pride of india to visit the site please go through our site https://ccindia.vercel.app
 
 Due to green weblling method a new server method your data is secured tight .The search engine is not asking any private details like account etc. It is totally private. It is totally encrypted and no one can view it what have u searched.
 ![image](https://github.com/Lemon-India/Hind/assets/110107438/4679e610-1cc4-428d-9b03-9aae51776901)
